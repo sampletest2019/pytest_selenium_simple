@@ -32,6 +32,7 @@ def test_search(env_setup):
         # locate and click on search button
         driver.find_element_by_xpath("//input[@value='Go']").click()
         # verify the page title
-        assert driver.title == 'Amazon.com: ' + item
+        assert driver.title == 'Amazon.com : ' + item
         # navigate to the previous page
         driver.back()
+
