@@ -5,6 +5,7 @@ expected_title = 'Amazon.com: Online Shopping for Electronics, Apparel, Computer
 base_url = 'https://www.amazon.com'
 search_title = 'Amazon.com: nike air max'
 
+
 @pytest.fixture()
 def env_setup():
     global driver
@@ -18,6 +19,7 @@ def env_setup():
     yield
     # when test is done, close ALL windows of the browser
     driver.quit()
+
 
 def test_title(env_setup):
     # navigate to Amazon.com home page
