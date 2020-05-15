@@ -5,6 +5,12 @@ This is a simple example of test scripts written using **Python**, **Selenium We
 Please update it according to your version of Google Chrome 
 installed on your machine when running locally.
 
+**Pre-requisites:**
+
+Please make sure you have **Python** installed https://www.python.org/downloads/
+
+Please make sure you have **PyCharm** installed https://www.jetbrains.com/pycharm/download/
+
 To install necessary package using **PyCharm** (on **Windows 10**):
 
 1. Open your project in **PyCharm**.
