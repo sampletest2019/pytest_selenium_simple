@@ -30,10 +30,8 @@ def test_search(env_setup, item):
     driver.get(base_url)
     # verify that website title is Amazon.com
     assert driver.title == expected_title
-    # locate search field element
-    search_field = driver.find_element_by_id("twotabsearchtextbox")
-    # enter search item from the list in the search field
-    search_field.send_keys(item)
+    # locate search field element and enter search item from the list in the search field
+    driver.find_element_by_id("twotabsearchtextbox").send_keys(item)
     # locate and click on search button
     driver.find_element_by_xpath("//input[@value='Go']").click()
     # verify the page title
