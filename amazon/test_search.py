@@ -11,7 +11,7 @@ def env_setup():
     global driver
     global baseUrl
     # we will use Google Chrome in this test. Specify the location of your chromedriver.exe
-    driver = webdriver.Chrome("../chromedriver_81.exe")
+    driver = webdriver.Chrome("../chromedriver_81")
     # maximize browser window to full screen
     driver.maximize_window()
     # pull the DOM for 10 seconds when trying to find any element
