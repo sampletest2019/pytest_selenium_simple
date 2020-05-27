@@ -21,4 +21,6 @@ To install necessary package using **PyCharm** (on **Windows 10**):
 6. Type in **pytest** and click on **Install Package**.
 7. Close Packages and Settings windows.
 
+You can run your test via terminal. Type **pytest -v filename** or **pytest -v** to run all tests in the folder.
+
 
