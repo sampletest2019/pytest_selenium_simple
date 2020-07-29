@@ -9,7 +9,7 @@ def browser():
     chrome_version_mac = "84"
     chrome_version_linux = "84"
 
-    if 'win' in platform.platform():
+    if 'Win' in platform.platform():
         browser = webdriver.Chrome("../resources/chromedriver_win_{}.exe".format(chrome_version_win))
     elif 'darwin' in platform.platform():
         browser = webdriver.Chrome("../resources/chromedriver_mac_{}".format(chrome_version_mac))
