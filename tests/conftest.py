@@ -5,9 +5,9 @@ from selenium import webdriver
 
 @pytest.fixture()
 def browser():
-    chrome_version_win = "84"
-    chrome_version_mac = "84"
-    chrome_version_linux = "84"
+    chrome_version_win = "85"
+    chrome_version_mac = "85"
+    chrome_version_linux = "85"
 
     if 'Win' in platform.platform():
         browser = webdriver.Chrome("../resources/chromedriver_win_{}.exe".format(chrome_version_win))
@@ -15,7 +15,7 @@ def browser():
         browser = webdriver.Chrome("../resources/chromedriver_mac_{}".format(chrome_version_mac))
     elif 'macOS' in platform.platform():
         browser = webdriver.Chrome("../resources/chromedriver_mac_{}".format(chrome_version_mac))
-    elif "linux" in platform.platform():
+    elif 'linux' in platform.platform():
         browser = webdriver.Chrome("../resources/chromedriver_linux_{}".format(chrome_version_linux))
     else:
         raise Exception("chromedriver is not configured for your Operation System! "
