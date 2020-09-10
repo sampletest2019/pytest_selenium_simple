@@ -5,7 +5,7 @@ expected_title = 'Amazon.com: Online Shopping for Electronics, Apparel, Computer
 base_url = 'https://www.amazon.com'
 search_title = 'Amazon.com : nike air max'
 
-
+@pytest.mark.regressiontest
 def test_search_airmax(browser):
     # navigate to Amazon.com home page
     browser.get(base_url)

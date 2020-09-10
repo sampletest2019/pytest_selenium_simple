@@ -10,6 +10,7 @@ base_url = 'https://www.amazon.com'
     "reebok crossfit shoes men",
     "puma sneakers",
     "adidas classic shoes"])
+@pytest.mark.regressiontest
 def test_search(browser, item):
     # navigate to Amazon.com home page
     browser.get(base_url)
