@@ -35,11 +35,11 @@ Please make sure you have **pip** installed https://pip.pypa.io/en/stable/instal
 2. Navigate to VCS - Git - Clone and paste repository URL 
 3. Select "New Window" option.
 4. Click on "Terminal" at the bottom of the page
-5a. For Windows users, type in **pip install pipenv** and press Enter
-5b. For mac OS users, type in **pip3 install pipenv** and press Enter
-6. Type in **pipenv install selenium** and press Enter
-7. Type in **pipenv install pytest** and press Enter
-8. Type in **pipenv install allure-pytest** and press Enter
+5. For Windows users, type in **pip install pipenv** and press Enter
+6. For mac OS users, type in **pip3 install pipenv** and press Enter
+7. Type in **pipenv install selenium** and press Enter
+8. Type in **pipenv install pytest** and press Enter
+9. Type in **pipenv install allure-pytest** and press Enter
 
 Navigate to "Edit Configurations.." at the top right of the PyCharm
 
