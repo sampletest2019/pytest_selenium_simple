@@ -1,7 +1,7 @@
 # pytest-selenium-simple
 
 This is a simple example of test scripts written using **Python**, **Selenium WebDriver** and **PyTest**. 
-**ChromeDriver** version is 83 and located inside the project. 
+**ChromeDriver** version is 85 and located inside the project. 
 Please update it according to your version of Google Chrome 
 installed on your machine when running locally.
 
