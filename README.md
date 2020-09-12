@@ -13,7 +13,8 @@ Please make sure you have **PyCharm** installed https://www.jetbrains.com/pychar
 
 Please make sure you have **Git** installed https://git-scm.com/downloads
 
-Please make sure you have **Allure** installed https://git-scm.com/downloads
+Please make sure you have **Allure** installed https://docs.qameta.io/allure/
+To install **Allure** please use the following steps:
 
 For Windows users:
 1. Install scoop https://scoop.sh/
