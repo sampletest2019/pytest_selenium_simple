@@ -7,9 +7,9 @@ from allure_commons.types import AttachmentType
 
 @pytest.fixture()
 def browser():
-    chrome_version_win = "85"
-    chrome_version_mac = "85"
-    chrome_version_linux = "85"
+    chrome_version_win = "86"
+    chrome_version_mac = "86"
+    chrome_version_linux = "86"
 
     if 'Win' in platform.platform():
         browser = webdriver.Chrome("./resources/chromedriver_win_{}.exe".format(chrome_version_win))
@@ -26,9 +26,10 @@ def browser():
     # wait 10 seconds to pull the DOM
     browser.implicitly_wait(10)
     # maximize browser window to full screen
-    browser.maximize_window()
+    # browser.maximize_window()
     yield browser
     # make a screenshot before closing the browser
     allure.attach(browser.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
     # when test is done, close ALL windows of the browser
     browser.quit()
+
