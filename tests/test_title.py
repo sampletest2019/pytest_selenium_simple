@@ -12,3 +12,6 @@ def test_title(browser):
     browser.get(base_url)
     # verify that website title is Amazon.com
     assert browser.title == expected_title
+
+
+    
