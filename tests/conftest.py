@@ -9,7 +9,7 @@ from allure_commons.types import AttachmentType
 def browser():
     chrome_version_win = "87"
     chrome_version_mac = "87"
-    chrome_version_linux = "87"
+    chrome_version_linux = "88"
 
     if 'Win' in platform.platform():
         browser = webdriver.Chrome("./resources/chromedriver_win_{}.exe".format(chrome_version_win))
@@ -24,7 +24,7 @@ def browser():
                         "Your Operating System is: {}".format(platform.platform()))
 
     # wait 10 seconds to pull the DOM
-    browser.implicitly_wait(10)
+    browser.implicitly_wait(20)
     # maximize browser window to full screen
     browser.maximize_window()
     yield browser
