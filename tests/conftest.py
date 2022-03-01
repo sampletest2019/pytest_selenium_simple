@@ -1,28 +1,13 @@
-import platform
-import pytest
-from selenium import webdriver
 import allure
+import pytest
 from allure_commons.types import AttachmentType
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 @pytest.fixture()
 def browser():
-    chrome_version_win = "88"
-    chrome_version_mac = "88"
-    chrome_version_linux = "88"
-
-    if 'Win' in platform.platform():
-        browser = webdriver.Chrome("./resources/chromedriver_win_{}.exe".format(chrome_version_win))
-    elif 'darwin' in platform.platform():
-        browser = webdriver.Chrome("./resources/chromedriver_mac_{}".format(chrome_version_mac))
-    elif 'macOS' in platform.platform():
-        browser = webdriver.Chrome("./resources/chromedriver_mac_{}".format(chrome_version_mac))
-    elif 'linux' in platform.platform():
-        browser = webdriver.Chrome("./resources/chromedriver_linux_{}".format(chrome_version_linux))
-    else:
-        raise Exception("chromedriver is not configured for your Operation System! "
-                        "Your Operating System is: {}".format(platform.platform()))
-
+    browser = webdriver.Chrome(ChromeDriverManager().install())
     # wait 10 seconds to pull the DOM
     browser.implicitly_wait(10)
     # maximize browser window to full screen
