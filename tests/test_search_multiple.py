@@ -1,6 +1,6 @@
 import pytest
 
-expected_title = 'Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more'
+expected_title = 'Amazon.com. Spend less. Smile more.'
 base_url = 'https://www.amazon.com'
 
 
