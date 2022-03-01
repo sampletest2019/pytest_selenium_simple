@@ -1,9 +1,9 @@
 # pytest-selenium-simple
 
 This is a simple example of test scripts written using **Python**, **Selenium WebDriver**, **PyTest** and **Allure**. 
-**ChromeDriver** version is 88 and located inside the project. 
-Please update it according to your version of Google Chrome 
-installed on your machine when running locally.
+**ChromeDriver** is managed by webdriver-manager package. 
+You will get the specific version chromedriver based on your OS and Chrome browser version
+automatically.
 
 **Pre-requisites:**
 
@@ -14,6 +14,8 @@ Please make sure you have **PyCharm** installed https://www.jetbrains.com/pychar
 Please make sure you have **Git** installed https://git-scm.com/downloads
 
 Please make sure you have **Allure** installed https://docs.qameta.io/allure/
+
+Please note ***Allure** requires Java to work. Please download and install JRE or JDK.
 To install **Allure** please use the following steps:
 
 For Windows users:
@@ -24,7 +26,7 @@ For mac OS users:
 1. Install Homebrew https://brew.sh/
 2. Execute **brew install allure** in the terminal
 
-mac OS users: 
+macOS users: 
 Please make sure you have **pip** installed https://pip.pypa.io/en/stable/installing/
 1. Right click on get-pip.py and select "save link as". Save get-pip.py somewhere on your computer (for example Downloads folder)
 2. Open terminal, navigate to Downloads folder (cd Downloads) and execute **python3 get-pip.py**
